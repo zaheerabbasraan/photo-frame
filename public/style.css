@@ -1,0 +1,20 @@
+.form--container{
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+    margin: 20px auto;
+}
+.images--container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.cr-slider{
+    opacity: 0;
+}
+
+.image{
+    width: 40vw;
+}

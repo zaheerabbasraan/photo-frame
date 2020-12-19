@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croppie</title>
+
+    <!--Include Custom Style-->
+    <link href="/style.css" rel="stylesheet" />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--Include Croppie-->
+    <link rel="stylesheet" href="croppie/croppie.css" />
+    <script src="croppie/croppie.js"></script>
+<style>
+    .rf-bg{
+background-repeat:no-repeat;
+        background-image: url(https://cdn.shopify.com/s/files/1/0269/7347/0775/files/top_bar.png?v=1594627883);
+    }
+    @media(max-width:600px){
+    .rf-logo{
+
+width:80%;
+
+    }
+    }
+    </style>
+</head>
+<body>
+    <div class="container-fluid rf-bg text-center">
+<img class="rf-logo" src="https://cdn.shopify.com/s/files/1/0269/7347/0775/files/600X200_400x.png?v=1594623110">
+    </div>
+<div class="container">
+<div class="row">
+    <div class="col-12 col-lg-12 col-md-12 mb-5">
+        <h1>STEP 1:</h1>
+     <label for="imgSrc">Image url: </label>
+        <input id="imgSrc" type="text" >
+    </div>
+    <div class="col-12 col-lg-12 col-md-12">
+
+      <div class="row">
+          <div class="col-12 col-lg-12 col-md-12">
+ <h1>STEP 2:</h1>
+          </div>
+          <div class="col-12 col-lg-12 col-md-12">
+              <div class="rf-flex">
+<div>
+          <label for="imgX">Point 1(X): </label>
+        <input id="imgX" type="number" />
+</div>
+<div>
+        <label for="imgY">Point 2(Y): </label>
+        <input id="imgY" type="number" />
+</div>
+              </div>
+          </div> 
+           <div class="col-12 col-lg-12 col-md-12 mt-5">
+               <div class="rf-flex">
+<div>
+             <label for="imgWidth">Point 3(W): </label>
+        <input id="imgWidth" type="number" />
+</div>
+<div>
+        <label for="imgHeight">Point 4(H): </label>
+        <input id="imgHeight" type="number" />
+</div>
+               </div>
+          </div> 
+      </div> 
+
+
+
+<div style="margin-top:3%" class="row mt-5">
+          <div class="col-12 col-lg-12 col-md-12">
+ <button class="loadOrg btn">OK</button>
+          </div>
+      </div>  
+ </div>
+</div>
+</div>
+   
+    
+
+    <div class="images--container">
+        <img id="img" class="image" src="" />
+        <img id="croppedImg" class="image" src="" />
+    </div>
+    
+    <div id="demo" class="image"></div>
+   <div class="container">
+    <div class="row">
+    <div class="col-12 col-lg-12 col-md-12 mb-5">
+        <h1>STEP 3:</h1>
+    </div>
+    </div>
+    <div style="margin-top:3%" class="row ">
+<div class="col-12 col-lg-6 col-md-6">
+    <button class="btn" id="getCropped">Get Cropped Image</button>
+</div>
+<div class="col-12 col-lg-6 col-md-6">
+    <a href="#" download="croped.png" class="btn button-primary rf-download" id="getCropped">Download Image</a>
+</div>
+</div>
+   </div>
+
+<footer>
+    <div class="row">
+        <div class="col-12 col-lg-12 col-md-12 text-center">
+            <span>
+                
+© 2020 Malachite - choose, design, print. All rights reserved
+            </span>
+        </div>
+    </div>
+</footer>
+    <script src="/script.js" ></script>
+</body>
+</html>
